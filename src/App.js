@@ -8,7 +8,15 @@ function App() {
     <Fragment>
       <label htmlFor="bar">bar</label>
       <input type="text" onClick={() => {console.log(greet)}} />
+      <Test />
+      <Test />
     </Fragment>
+  );
+}
+
+const Test = () => {
+  return (
+    <div>Mie</div>
   );
 }
 
