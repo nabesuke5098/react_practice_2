@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 // import ReactDOM from 'react-dom';
 
 function App() {
@@ -26,8 +27,13 @@ const User = (props) => {
   );
 }
 
-User.defaultProps = {
-  age: 1
+// User.defaultProps = {
+//   age: 1
+// }
+
+User.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number.isRequired
 }
 
 export default App;
