@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 // import ReactDOM from 'react-dom';
 
 function App() {
+  const greet = "HII";
+
   return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
+    <Fragment>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onClick={() => {console.log(greet)}} />
+    </Fragment>
   );
 }
 
